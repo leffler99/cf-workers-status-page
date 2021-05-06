@@ -1,7 +1,7 @@
 settings:
   title: 'Hammer-Tech Status Page'
   url: 'https://status.hammer-tech.net' # used for Slack messages
-  logo: H-T_logo-l.png # image in ./public/ folder
+  logo: H-T_logo-s.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
