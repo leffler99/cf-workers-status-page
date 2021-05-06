@@ -1,7 +1,7 @@
 settings:
   title: 'Hammer-Tech Status Page'
   url: 'https://status.hammer-tech.net' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  logo: H-T logo long.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: Home # unique identifier
-    name: Home.hammer-tech.net
+    name: Home
     description: 'Hammer-Tech landing page.' # default=empty
     url: 'https://Home.hammer-tech.net/' # URL to fetch
     method: GET # default=GET
@@ -24,8 +24,15 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: OMBI
-    name: www.hammer-tech.net
-    description: 'Plex'
+    name: OMBI
+    description: 'Plex component'
     url: 'https://www.hammer-tech.net'
+    method: GET
+    expectStatus: 200
+  
+    - id: Sonarr
+    name: Sonarr
+    description: 'Plex component'
+    url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@sonarr-auth.hammer-tech.net'
     method: GET
     expectStatus: 200
