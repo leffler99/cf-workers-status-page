@@ -36,3 +36,10 @@ monitors:
     url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@sonarr-auth.hammer-tech.net'
     method: GET
     expectStatus: 200
+    
+    - id: Radarr
+    name: Radarr
+    description: 'Plex component'
+    url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@radarr-auth.hammer-tech.net'
+    method: GET
+    expectStatus: 200
