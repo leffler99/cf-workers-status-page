@@ -33,13 +33,13 @@ monitors:
   - id: Sonarr-stat
     name: Sonarr
     description: 'Plex component'
-    url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@sonarr-auth.hammer-tech.net'
+    url: 'https://{{SECRET_CF_ACCESS_KEY}}.access:{{SECRET_CF_ACCESS_ID}}@sonarr-auth.hammer-tech.net'
     method: GET
     expectStatus: 200
     
   - id: Radarr-stat
     name: Radarr
     description: 'Plex component'
-    url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@radarr-auth.hammer-tech.net'
+    url: 'https://{{SECRET_CF_ACCESS_KEY}}.access:{{SECRET_CF_ACCESS_ID}}@radarr-auth.hammer-tech.net'
     method: GET
     expectStatus: 200
