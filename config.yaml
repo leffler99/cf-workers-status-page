@@ -15,7 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: Home # unique identifier
+  - id: Home-stat # unique identifier
     name: Home
     description: 'Hammer-Tech landing page.' # default=empty
     url: 'https://Home.hammer-tech.net/' # URL to fetch
@@ -23,21 +23,21 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: OMBI
+  - id: OMBI-stat
     name: OMBI
     description: 'Plex component'
     url: 'https://www.hammer-tech.net'
     method: GET
     expectStatus: 200
   
-    - id: Sonarr
+  - id: Sonarr-stat
     name: Sonarr
     description: 'Plex component'
     url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@sonarr-auth.hammer-tech.net'
     method: GET
     expectStatus: 200
     
-    - id: Radarr
+  - id: Radarr-stat
     name: Radarr
     description: 'Plex component'
     url: 'https://'SECRET_CF_ACCESS_KEY'.access:'SECRET_CF_ACCESS_ID'@radarr-auth.hammer-tech.net'
